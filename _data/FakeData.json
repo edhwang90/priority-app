@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "x": 5,
+    "y": 8,
+    "r": 10,
+    "name": "Lorem Ipsum",
+    "description": "Quisque dapibus turpis ligula. Vivamus quam nisi, ornare scelerisque urna ac, tincidunt feugiat ex. Suspendisse at placerat justo. Aliquam viverra cursus ex, id feugiat ex gravida a. Tristique mauris id fringilla.",
+    "chosenX": { "name": "Effort", "value": 5 },
+    "chosenY": { "name": "Value", "value": 8 },
+    "tag": { "name": "Priority 1", "color": "#FF6E6E" }
+  },
+  {
+    "id": 2,
+    "x": 9,
+    "y": 2,
+    "r": 10,
+    "name": "Cillum dolore",
+    "description": "Donec eu eros dolor. Vivamus bibendum massa quis efficitur porttitor. Aenean sed libero non diam dignissim viverra ut nec sapien. Maecenas tristique mauris id fringilla faucibus.",
+    "chosenX": { "name": "Effort", "value": 9 },
+    "chosenY": { "name": "Value", "value": 2 },
+    "tag": { "name": "Backlog 1 ", "color": "#A1FF6E" }
+  },
+  {
+    "id": 3,
+    "x": 2,
+    "y": 5,
+    "r": 10,
+    "name": "Architecto vitae",
+    "description": "Nunc vehicula rhoncus erat, sed semper est fringilla nec. Mauris fringilla odio ornare quam suscipit commodo.",
+    "chosenX": { "name": "Effort", "value": 2 },
+    "chosenY": { "name": "Value", "value": 5 },
+    "tag": { "name": "Backlog 1 ", "color": "#A1FF6E" }
+  },
+  {
+    "id": 4,
+    "x": 7,
+    "y": 3,
+    "r": 10,
+    "name": "Quis autem",
+    "description": "Duis imperdiet mattis imperdiet. Aliquam ac mauris nulla",
+    "chosenX": { "name": "Effort", "value": 7 },
+    "chosenY": { "name": "Value", "value": 3 },
+    "tag": { "name": "Backlog 1 ", "color": "#A1FF6E" }
+  }
+]
+

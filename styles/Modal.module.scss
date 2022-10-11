@@ -1,0 +1,45 @@
+.modal {
+  background-color: #ffffff;
+  width: 300px;
+  max-height: 450px;
+  border-radius: 3px;
+  padding: 10px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.modalHeader {
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  span {
+    display: inline-block;
+    float: right;
+    font-size: .8rem;
+    font-weight: normal;
+  }
+}
+
+.scores {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  // margin-bottom: 20px; re-implement with action buttons
+}
+
+.displayScore {
+  font-size: 1.5rem;
+}
+
+.labels {
+  font-weight: normal;
+  font-size: .8rem;
+}
+
+.toggle {
+  cursor: pointer;
+  color: #0000EE;
+}

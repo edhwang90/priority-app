@@ -1,0 +1,111 @@
+// Clear Base
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+label, p,
+ul, ol, 
+a, button, input, textarea, pre {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Open sans', sans-serif;
+  color: #4d4d4d;
+  font-size: 1rem;
+  line-height: 1.2;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+// Grid
+.row {
+  display: flex;
+  flex: 0;
+}
+
+.col {
+  flex: 1;
+  flex-direction: column;
+  margin-right: 1.5rem;
+  width: 100%; // necessary for overflow
+
+  &:last-of-type {
+    margin-right: 0rem;
+
+  }
+}
+
+// Utility
+.text-center {
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ellipsis {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ellipsis.small {
+  width: 100px;
+}
+
+//Grid
+
+.col-min {
+  flex-grow: 0;
+  flex-shrink: 0;
+  // flex-basis: (width) rem/em; for fixed
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.flex-grow {
+  flex: 0 0 50%;
+}
+
+.flex-shrink {
+  flex: 0 0 0;
+}
+
+@media (max-width: 1400px) {
+  .row {
+    display: block;
+  }
+
+  .col {
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// Content
+.content {
+  padding: 30px 15px;
+}
