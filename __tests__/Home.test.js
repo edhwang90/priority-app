@@ -1,9 +1,7 @@
 import React from 'react';
-import {render, screen, fireEvent, act} from '@testing-library/react'
+import {render, act} from '@testing-library/react'
 
 import { useHome } from '../pages';
-
-const options = 1;
 
 const setup = (args) => {
   const returnVal = {};
