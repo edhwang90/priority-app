@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import styles from '../../styles/Grid.module.scss';
 
-export const Grid = (props) => {
-  const { data, config } = props;
+export const useGrid = (config) => {
 
   const scoreFill = (score, isX = true) => {
     const start = useRef('#FFA99C');
@@ -39,6 +38,15 @@ export const Grid = (props) => {
     }
 
   }
+
+  return {
+    scoreFill
+  }
+}
+
+export const Grid = (props) => {
+  const { data, config } = props;
+  const { scoreFill } = useGrid(config);
 
   return (
     <div className={styles.table}>
