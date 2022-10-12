@@ -18,7 +18,7 @@ const setup = (args) => {
 describe('Home', () => {
 
   it('toggles modal', () => {
-    const homeHook = setup({ onClick: () => {} });
+    const homeHook = setup();
 
     act(() => {
       homeHook.toggleModal();

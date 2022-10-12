@@ -1,39 +1,39 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import styles from '../../styles/Grid.module.scss';
 
 export const useGrid = (config) => {
 
   const scoreFill = (score, isX = true) => {
-    const start = useRef('#FFA99C');
-    const middle = useRef('#FFFC9C');
-    const end = useRef('#B1FF9C');
+    let start = '#FFA99C';
+    let end = '#B1FF9C';
+    const middle = '#FFFC9C';
 
     if (config.maxYbetter === "false") {
-      start.current = '#B1FF9C';
-      end.current = '#FFA99C';
+      start = '#B1FF9C';
+      end = '#FFA99C';
     }
 
     if (!isX) {
       if (score > 6) {
-        return (<span className={styles.scoreFill} style={{backgroundColor: end.current, width: score*10 }}></span>)
+        return (<span className={styles.scoreFill} style={{backgroundColor: end, width: score*10 }}></span>)
       }
       else if (score > 3 && score <= 6) {
-        return (<span className={styles.scoreFill} style={{backgroundColor: middle.current, width: score*10 }}></span>)
+        return (<span className={styles.scoreFill} style={{backgroundColor: middle, width: score*10 }}></span>)
       }
       else {
-        return (<span className={styles.scoreFill} style={{backgroundColor: start.current, width: score*10 }}></span>)
+        return (<span className={styles.scoreFill} style={{backgroundColor: start, width: score*10 }}></span>)
       }
     }
     else {
       if (score > 6) {
-        return (<span className={styles.scoreFill} style={{backgroundColor: start.current, width: score*10 }}></span>)
+        return (<span className={styles.scoreFill} style={{backgroundColor: start, width: score*10 }}></span>)
       }
       else if (score > 3 && score <= 6) {
-        return (<span className={styles.scoreFill} style={{backgroundColor: middle.current, width: score*10 }}></span>)
+        return (<span className={styles.scoreFill} style={{backgroundColor: middle, width: score*10 }}></span>)
       }
       else {
-        return (<span className={styles.scoreFill} style={{backgroundColor: end.current, width: score*10 }}></span>)
+        return (<span className={styles.scoreFill} style={{backgroundColor: end, width: score*10 }}></span>)
       }
     }
 

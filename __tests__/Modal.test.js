@@ -18,7 +18,7 @@ const setup = (args) => {
 describe('Modal', () => {
 
   it('toggles description', () => {
-    const modalHook = setup({ onClick: () => {} });
+    const modalHook = setup();
 
     act(() => {
       modalHook.toggleDescription();
